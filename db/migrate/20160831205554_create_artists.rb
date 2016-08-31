@@ -5,6 +5,7 @@ class CreateArtists < ActiveRecord::Migration[5.0]
       t.string :phone
       t.string :email
       t.string :website
+      t.integer :parlour_id
       t.timestamps
     end
   end

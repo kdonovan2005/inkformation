@@ -9,6 +9,7 @@ class CreateParlours < ActiveRecord::Migration[5.0]
       t.string :phone
       t.string :website
       t.string :email
+      t.integer :artist_id
       t.timestamps
     end
   end
