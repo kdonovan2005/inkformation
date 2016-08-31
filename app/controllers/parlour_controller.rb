@@ -1,0 +1,2 @@
+class ParlourController < ApplicationController
+end
