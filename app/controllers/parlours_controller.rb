@@ -1,4 +1,4 @@
-class ParlourController < ApplicationController
+class ParloursController < ApplicationController
 
   def index
     @parlours = Parlour.all
@@ -7,5 +7,5 @@ class ParlourController < ApplicationController
   def show
     @parlour = Parlour.find(params[:id])
   end
-  
+
 end

@@ -1,4 +1,4 @@
-class ArtworkController < ApplicationController
+class ArtworksController < ApplicationController
 
   def index
     @artworks = Artwork.all
@@ -7,5 +7,5 @@ class ArtworkController < ApplicationController
   def show
     @artwork = Artwork.find(parmas[:id])
   end
-  
+
 end
