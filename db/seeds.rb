@@ -4,8 +4,8 @@ Artist.create(name: "Artist 3", phone: "123456789", email: "artist3@test.com", w
 Artist.create(name: "Artist 4", phone: "123456789", email: "artist4@test.com", website: "www.artist4.com", parlour_id: 2)
 Artist.create(name: "Artist 5", phone: "123456789", email: "artist5@test.com", website: "www.artist5.com", parlour_id: 3)
 
-Parlour.create(name: "Parlour 1", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour1.com", email: "parlour1@test.com", artist_id: 1, artist_id: 2)
-Parlour.create(name: "Parlour 2", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour2.com", email: "parlour2@test.com", artist_id: 3, artist_id: 4)
+Parlour.create(name: "Parlour 1", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour1.com", email: "parlour1@test.com", artist_id: 1)
+Parlour.create(name: "Parlour 2", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour2.com", email: "parlour2@test.com", artist_id: 3)
 Parlour.create(name: "Parlour 3", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour3.com", email: "parlour3@test.com", artist_id: 5)
 
 Artwork.create(title: "Artwork 1", description: "Art peice 1", url: "https://s-media-cache-ak0.pinimg.com/236x/9a/79/9b/9a799b3c2896f44edf5cdab6eafa58d7.jpg", artist_id: 1)

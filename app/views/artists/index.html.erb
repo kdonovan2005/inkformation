@@ -1,11 +1,8 @@
 <% @artists.each do |artist| %>
-  Name: <%= artist.name %>
-   - Phone: <%= artist.phone %>
-   - Email: <%= artist.email %>
-   - Website: <%= artist.website %>
-   - Parlour(s): <% artist.parlour_id.each do |parlour| %>
-   <ul>
-     <li><%= parlour.name %></li>
-   </ul>
-   <% end %>
+  Name: <%= artist.name %> <br>
+   - Phone: <%= artist.phone %> <br>
+   - Email: <%= artist.email %> <br>
+   - Website: <%= artist.website %> <br>
+   <% binding.pry %>
+   - Parlour(s) <%= artist.parlours.name %> <br> <br>
 <% end %>
