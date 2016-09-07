@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Artist.create(name: "Artist 1", phone: "123456789", email: "artist1@test.com", website: "www.artist1.com", parlour_id: 1)
+Artist.create(name: "Artist 2", phone: "123456789", email: "artist2@test.com", website: "www.artist2.com", parlour_id: 1)
+Artist.create(name: "Artist 3", phone: "123456789", email: "artist3@test.com", website: "www.artist3.com", parlour_id: 2)
+Artist.create(name: "Artist 4", phone: "123456789", email: "artist4@test.com", website: "www.artist4.com", parlour_id: 2)
+Artist.create(name: "Artist 5", phone: "123456789", email: "artist5@test.com", website: "www.artist5.com", parlour_id: 3)
+
+Parlour.create(name: "Parlour 1", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour1.com", email: "parlour1@test.com", artist_id: 1, artist_id: 2)
+Parlour.create(name: "Parlour 2", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour2.com", email: "parlour2@test.com", artist_id: 3, artist_id: 4)
+Parlour.create(name: "Parlour 3", address: "123 Main St", city: "Anywhere", state: "NY", zip_code: "12345", phone: "123456789", website: "www.parlour3.com", email: "parlour3@test.com", artist_id: 5)
+
+Artwork.create(title: "Artwork 1", description: "Art peice 1", url: "https://s-media-cache-ak0.pinimg.com/236x/9a/79/9b/9a799b3c2896f44edf5cdab6eafa58d7.jpg", artist_id: 1)
+Artwork.create(title: "Artwork 2", description: "Art peice 2", url: "https://www.tattoodo.com/images/0/19945.webp", artist_id: 1)
+Artwork.create(title: "Artwork 3", description: "Art peice 3", url: "http://www.tattoo.com/sites/default/files/styles/480x385/public/japanese_0.jpg?itok=0mQdI1mE", artist_id: 2)
+Artwork.create(title: "Artwork 4", description: "Art peice 4", url: "http://static.boredpanda.com/blog/wp-content/uploads/2016/05/black-white-snake-tattoos-mirko-sata-fb.png", artist_id: 2)
+Artwork.create(title: "Artwork 5", description: "Art peice 5", url: "https://s-media-cache-ak0.pinimg.com/736x/dc/a2/89/dca289a2b98d6fc15e78c82fb2e2931b.jpg", artist_id: 3)
+Artwork.create(title: "Artwork 6", description: "Art peice 6", url: "https://www.tattoodo.com/images/0/19971.webp", artist_id: 3)
+Artwork.create(title: "Artwork 7", description: "Art peice 7", url: "https://s-media-cache-ak0.pinimg.com/236x/df/17/3d/df173d612e17d7b769c6480ea66a8a2a.jpg", artist_id: 4)
+Artwork.create(title: "Artwork 8", description: "Art peice 8", url: "https://s-media-cache-ak0.pinimg.com/736x/22/c8/6a/22c86ae7955920c49b0a075812c0721f.jpg", artist_id: 4)
+Artwork.create(title: "Artwork 9", description: "Art peice 9", url: "https://s-media-cache-ak0.pinimg.com/236x/ff/b2/5c/ffb25c60fd40af2f44f8cd0479924c4a.jpg", artist_id: 5)
+Artwork.create(title: "Artwork 10", description: "Art peice 10", url: "http://cdn1.sortra.com/wp-content/uploads/2014/10/compass-tattoo-design05.jpg", artist_id: 5)
