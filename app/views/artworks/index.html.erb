@@ -1,0 +1,6 @@
+<% @artworks.each do |art| %>
+  <%= art.title %> <br>
+  <%= art.description %> <br>
+  <%= art.artist.name %> <br>
+  <img src="<%= art.url %>" alt="" style="width: 200px; height: auto;"/> <br> <br>
+<% end %>
